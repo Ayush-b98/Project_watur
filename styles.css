@@ -1,0 +1,464 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #143e51fb;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .menu-icon {
+    display: none; /* Hide the icon on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+nav .menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    padding: 0.5em 1em;
+}
+
+nav ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    z-index: 0;
+}
+
+nav ul li:hover::before {
+    background-color: #e0f7fa;
+}
+
+nav ul li a:hover {
+    color: #143e51fb;
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #143e51fb;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav .menu-icon {
+        display: flex; /* Show the icon on smaller screens */
+    }
+
+    nav ul li {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+.why-conserve-water {
+    text-align: center;
+    padding: 5em;
+    background-image: url('https://as2.ftcdn.net/v2/jpg/05/81/99/11/1000_F_581991108_03k3wFisF3OCaaNAIQC6jhjjUpW3hZsf.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: rgb(234, 249, 250); /* Ensure text is readable over the image */
+}
+
+.why-conserve-water h2,
+.why-conserve-water p {
+    color: inherit; /* Ensures that text color inherits from the parent, useful if you change the parent color */
+}
+
+.know {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2em;
+    position: relative;
+    padding: 2em ;
+}
+
+.know p {
+    max-width: 600px;
+    padding: 1em;
+    margin: 1em 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 0, 0, 0.05) inset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.know p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 0 12px rgba(0, 0, 0, 0.1) inset;
+}
+
+.know p:nth-child(odd) {
+    margin-left: auto;
+}
+
+.know p:nth-child(even) {
+    margin-right: auto;
+}
+
+.know p::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #143e51;
+    top: 0;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: height 0.3s ease;
+    z-index: 0;
+}
+
+.know p:nth-child(odd)::after {
+    left: 0%;
+    transform: translateX(-50%);
+}
+
+.know p:nth-child(even)::after {
+    left: 100%;
+    transform: translateX(50%);
+}
+
+.know p:hover::after {
+    height: 100%;
+}
+.pollutionscene {
+    width: 70%;
+    height: 300px;
+    overflow-y: auto;
+    background-color: #8b898945;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 90px 160px 90px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pollutionscene p {
+      margin: 0 0 20px;
+      line-height: 1.5;
+    }
+    .global {
+        width: 70%;
+        height: 300px;
+        overflow-y: auto;
+        background-color:  #8b898945;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 90px 160px 90px ;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .global p {
+        margin: 0 0 20px;
+        line-height: 1.5;
+      }
+    .slider {
+    /* max-width: 90%; */
+    text-align: center;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slides {
+    display: flex;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .slide img {
+    width: 100%;
+    border-radius: 10px;
+  }
+.button{
+    border-radius: 10%;
+    background-color: #f9fbee;
+padding: 50px 50px;
+text-align: center;
+text-decoration: wavy;
+display: inline-block;
+font-size: 16px;
+
+}
+.impact-stats {
+    padding: 2em;
+    text-align: center;
+    text-decoration:underline 3px;
+}.featured-articles, .helpful-resources {
+    padding: 2em;
+    text-align: center;
+
+}
+
+.facts-list
+{
+    background-image: url('https://www.thewaterscrooge.com/hubfs/Hero%20Image%20-%20Water%20Scrooge.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+
+/* for slide show */
+}
+ .facts-list {
+    position: relative;
+    max-width: 750px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+fact-slides {
+    display: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+.fact-number {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 18px;
+    color: #333;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(250, 249, 251);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0 6px 6px 0;
+    user-select: none;
+}
+.prev
+{
+    left: 0;
+     border-radius: 0 6px 6px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 6px 0 0 6px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.fact{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.fact
+{
+    width: 70%;
+    margin: 2em;
+    padding: 1em;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fact:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: #95d5f8;
+}
+.ticker-container {
+    background-color: rgb(2, 2, 22);
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 50px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+    .ticker{
+        display: inline-block;
+        padding-left: 100%;
+        animation: ticker 15s linear infinite;
+        }
+        @keyframes ticker{
+            0%{
+                transform: translateX(100%);
+            }
+            100%
+            {
+                transform: translateX(-100%);
+            }
+        }
+        .hidden{
+            display:none;
+        }
+        .articles, .resource-list {
+            display: flex;
+    justify-content: space-around;
+}
+.hero {
+    text-align:right;
+    padding: 15em;
+    background-image: url(https://kayplumbing.com/wp-content/uploads/2021/02/save-water-turn-faucet-off-.png);
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+.infographics
+{
+    text-align: center;
+    text-decoration: underline 3px;
+
+}
+
+.articles article, .resource-list .resource {
+    width: 45%;
+    margin: 1em 0;
+    text-align:center;
+}
+
+.articles article img, .resource-list .resource img {
+    max-width: 100%;
+}
+
+footer {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content div {
+    margin: 1em;
+    flex: 1;
+}
+
+.footer-content h3 {
+    margin-top: 0;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin: 0.5em 0;
+}
+
+.daily-tip {
+    background-color: #e0f7fa;
+    padding: 2em;
+    text-align: center;
+    border-radius: 8px;
+    margin: 2em 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.daily-tip h2 {
+    margin-bottom: 1em;
+    color: #0b5984;
+}
+
+#tip-container {
+    background-color: hsl(0, 100%, 99%);
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, box-shadow 0.1s ease;
+}
+
+#tip-text {
+    font-size: 1.2em;
+    color: #03282d;
+}
+
+#tip-container:hover {
+    background-color: #ddeef2;
+    box-shadow: 0 4px 10px rgba(241, 241, 217, 0.2);
+}
+
