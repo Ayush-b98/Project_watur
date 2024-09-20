@@ -1,185 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Watur|Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <header>
-        <div class="logo">Watur</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tips.html">Tips & Guides</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact us.html">Contact us</a></li>
-            </ul>
-        </nav>
-    </header>
-<section class="why-conserve-water">
-    <h2>Why Conserve Water?</h2>
-    <p>Water is essential for life, but it's a limited resource. By conserving water, we can help protect our environment, reduce the strain on public water systems, and save money on our utility bills. Water conservation also helps ensure that future generations have access to clean and safe water.</p>
-</section>
-  <section class="know"><h2> 
-     <p>Did you know?</p></h2>
-    <ul>
-        <p>Only 1% of the Earth's water is available for drinking.</p>
-        <p>Water shortages affect over 2 billion people worldwide.</p>
-        <p>Conserving water reduces energy consumption and greenhouse gas emissions.</p>
-    </ul>
-</section>
+  </head>
 
-<section class="infographics">
-    <h2>Water pollutions around the world</h2>
-</section> 
-<div class="slider">
-    <section class="slides">
-      <div class="slide"><img src="https://rsisinternational.org/journals/ijriss/wp-content/uploads/2023/10/Awareness-on-the-percentage-of-water-pollution-in-Bangalore-city.png" alt="Water pollution survey in bangalore">
-    </div>
-      <div class="slide"><img src="https://cdnapisec.kaltura.com/p/1776261/thumbnail/entry_id/1_n7q7i7ho/width/%7BthumbnailWidth%7D" alt="ganga pollution">
-    </div>
-      <div class="slide"><img src="https://watereurope.eu/wp-content/uploads/2024/04/env-e1667226133648.png" alt="pollution in europe">
-        </div>
-      <div class="slide"><img src="https://sotp.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2019/09/water-cycle-diagram-637x514.jpg" alt="global warming">
-    </div>
-    </section>
-    <section class="pollutionscene">
-    <div class="pollution">
-        
-        <p><h3>Case study:Bangalore’s water crisis</h3> At one point, Bangalore was known as ‘the city of lakes because of the large number of water bodies that scattered the region. Even now, it is a city with more than a hundred lakes and a thousand water bodies. As time passed, however, most of these bodies, and especially the major lakes like Varthur and Bellandur, were subjected to high levels of pollution. <br>Bangalore’s industrial growth has contributed to water pollution. <b>Karnataka State Pollution Control Board (KSPCB)</b> stated in 2021, industrial units in and around Bangalore were discharging a substantial amount of untreated or partially treated effluents into water bodies, contaminating them. Consequently, many locals and long-term residents who relied on the bodies of water either for income, sustenance, or both, suffered great economic, environmental, and medical setbacks to their way of life. <br>The link between <a href="https://sdgs.un.org/goals/goal6">SDG-6</a> and water pollution is central to achieving sustainable development and ensuring universal access to clean water and adequate sanitation for all.<a href="https://sdgs.un.org/goals/goal6">SDG-6</a> focuses on “ensuring availability and sustainable management of water and sanitation for all” and encompasses several targets related to water quality, pollution reduction, and ecosystem protection. <br>Addressing water pollution is vital to achieving <a href="https://sdgs.un.org/goals/goal6">SDG-6</a> and broader sustainable development. Governments, communities, and businesses must collaborate to implement effective water pollution control measures, invest in wastewater treatment, promote sustainable industrial practices, and raise awareness about responsible water usage to safeguard water resources and achieve the targets outlined in <a href="https://sdgs.un.org/goals/goal6">SDG-6</a> <br>This situation will persist as long as we are no aware of the situation  adn will work towards the developmentof the city rather than just making things worse for our own purpose.</p>
-    </div>
-</section>
-    <section class="global">
-        <div class="warming">
-            <p><h3>Global warming and water pollution</h3>Water quality is also affected by climate change, as higher water temperatures and more frequent floods and droughts are projected to exacerbate many forms of water pollution from sediments to pathogens and pesticides <a href="https://www.ipcc.ch/report/ar6/wg2/downloads/outreach/IPCC_AR6_WGII_FactSheet_FoodAndWater.pdf">(IPCC)</a>.
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="resources.html">Resources</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link active" aria-current="page" href="tips.html">Tips</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact us.html">Contact Us</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">Home</a></li>
+                  <li><a class="dropdown-item" href="contact us.html">contact-info</a></li>
+                  <li><a class="dropdown-item" href="resources.html">resource</a></li>
+                  <li><a class="dropdown-item" href="tips.html">Tips</a></li>
+                  <li><a class="dropdown-item" href="ab.html">cab</a></li>
+
+
  
-                Climate change, population growth and increasing water scarcity will put pressure on food supply (IPCC) as most of the freshwater used, about 70 per cent on average, is used for agriculture (it takes between 2000 and 5000 liters of water to produce a person’s daily food) (FAO).
-            </P>
-                <P>Limiting global warming to 1.5°C compared to 2°C would approximately halve the proportion of the world population expected to suffer water scarcity, although there is considerable variability between regions <a href="https://www.ipcc.ch/report/ar6/wg2/downloads/outreach/IPCC_AR6_WGII_FactSheet_FoodAndWater.pdf">(IPCC)</a>.</p>
-                    <P>imate change has made extreme weather events such as floods and droughts more likely and more severe <a href="https://www.ipcc.ch/report/ar6/wg2/downloads/outreach/IPCC_AR6_WGII_FactSheet_FoodAndWater.pdf">(IPCC)</a>.
- 
-                        Rising global temperatures increase the moisture the atmosphere can hold, resulting in more storms and heavy rains, but paradoxically also more intense dry spells as more water evaporates from the land and global weather patterns change. <a href="https://www.worldbank.org/en/topic/waterresourcesmanagement"></a>World bank</P>
-                        <p>Since 2000, flood-related disasters have risen by 134 per cent compared with the two previous decades. Most of the flood-related deaths and economic losses were recorded in Asia <a href="https://wmo.int/news/media-centre/wake-looming-water-crisis-report-warns">(WMO)</a>. The number and duration of droughts also increased by 29 per cent over this same period. Most drought-related deaths occurred in Africa <a href="">(WMO)</a>.</p>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link disabled" aria-disabled="true">Link</a> -->
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
+      </nav>
+  
+    <section class="why-conserve-water">
+        <h2>Why Conserve Water?</h2>
+        <p>Water is essential for life, but it's a limited resource. By conserving water, we can help protect our
+            environment, reduce the strain on public water systems, and save money on our utility bills. Water
+            conservation also helps ensure that future generations have access to clean and safe water.</p>
     </section>
-    <div class="infographic">
-<section class="impact-stats">
-        <h2><u>Fascinating Facts About Water</u> </h2>
+    <section class="know">
+        <h2>
+            <p>Did you know?</p>
+        </h2>
+        <ul>
+            <p>Only 1% of the Earth's water is available for drinking.</p>
+            <p>Water shortages affect over 2 billion people worldwide.</p>
+            <p>Conserving water reduces energy consumption and greenhouse gas emissions.</p>
+        </ul>
+    </section>
+
+    <section class="infographics">
+        <h2>Water pollutions around the world</h2>
+    </section>
+    <div class="slider">
+        <section class="slides">
+            <div class="slide"><img
+                    src="https://rsisinternational.org/journals/ijriss/wp-content/uploads/2023/10/Awareness-on-the-percentage-of-water-pollution-in-Bangalore-city.png"
+                    alt="Water pollution survey in bangalore">
+            </div>
+            <div class="slide"><img
+                    src="image1.jpg"
+                    alt="ganga pollution">
+            </div>
+            <div class="slide"><img src="image2.png"
+                    alt="pollution in europe">
+            </div>
+            <div class="slide"><img
+                    src="image4.webp"
+                    alt="global warming">
+            </div>
         </section>
-        <section class="facts-list">
-            <div class="fact-slides fade">
-             <div class="fact-number">1 / 10</div>
-            <div class="fact">
-                <h3><u>Fact</u></h3>
-                <p>Less than 1% of the water supply on Earth can be used as drinking water. The rest is salt water (97%) or inaccessible (2%).</p>
+        <section class="pollutionscene">
+            <div class="pollution">
+
+                <p>
+                <h3>Case study:Bangalore’s water crisis</h3> At one point, Bangalore was known as ‘the city of lakes
+                because of the large number of water bodies that scattered the region. Even now, it is a city with more
+                than a hundred lakes and a thousand water bodies. As time passed, however, most of these bodies, and
+                especially the major lakes like Varthur and Bellandur, were subjected to high levels of pollution.
+                <br>Bangalore’s industrial growth has contributed to water pollution. <b>Karnataka State Pollution
+                    Control Board (KSPCB)</b> stated in 2021, industrial units in and around Bangalore were discharging
+                a substantial amount of untreated or partially treated effluents into water bodies, contaminating them.
+                Consequently, many locals and long-term residents who relied on the bodies of water either for income,
+                sustenance, or both, suffered great economic, environmental, and medical setbacks to their way of life.
+                <br>The link between <a href="https://sdgs.un.org/goals/goal6">SDG-6</a> and water pollution is central
+                to achieving sustainable development and ensuring universal access to clean water and adequate
+                sanitation for all.<a href="https://sdgs.un.org/goals/goal6">SDG-6</a> focuses on “ensuring availability
+                and sustainable management of water and sanitation for all” and encompasses several targets related to
+                water quality, pollution reduction, and ecosystem protection. <br>Addressing water pollution is vital to
+                achieving <a href="https://sdgs.un.org/goals/goal6">SDG-6</a> and broader sustainable development.
+                Governments, communities, and businesses must collaborate to implement effective water pollution control
+                measures, invest in wastewater treatment, promote sustainable industrial practices, and raise awareness
+                about responsible water usage to safeguard water resources and achieve the targets outlined in <a
+                    href="https://sdgs.un.org/goals/goal6">SDG-6</a> <br>This situation will persist as long as we are
+                no aware of the situation and will work towards the developmentof the city rather than just making
+                things worse for our own purpose.</p>
             </div>
-        </div>
-        <div class="fact-slides fade">
-            <div class="fact-number"> 2/ 10</div>
-            <div class="fact">
-                <h3><u>Fact</u></h3>
-                <p>A single dripping faucet can waste over 3,000 gallons of water a year. That's enough water to take over 180 showers!</p>
+        </section>
+        <section class="global">
+            <div class="warming">
+                <p>
+                <h3>Global warming and water pollution</h3>Water quality is also affected by climate change, as higher
+                water temperatures and more frequent floods and droughts are projected to exacerbate many forms of water
+                pollution from sediments to pathogens and pesticides <a
+                    href="https://www.ipcc.ch/report/ar6/wg2/downloads/outreach/IPCC_AR6_WGII_FactSheet_FoodAndWater.pdf">(IPCC)</a>.
+
+                Climate change, population growth and increasing water scarcity will put pressure on food supply (IPCC)
+                as most of the freshwater used, about 70 per cent on average, is used for agriculture (it takes between
+                2000 and 5000 liters of water to produce a person’s daily food) (FAO).
+                </P>
+                <P>Limiting global warming to 1.5°C compared to 2°C would approximately halve the proportion of the
+                    world population expected to suffer water scarcity, although there is considerable variability
+                    between regions <a
+                        href="https://www.ipcc.ch/report/ar6/wg2/downloads/outreach/IPCC_AR6_WGII_FactSheet_FoodAndWater.pdf">(IPCC)</a>.
+                </p>
+                <P>imate change has made extreme weather events such as floods and droughts more likely and more severe
+                    <a
+                        href="https://www.ipcc.ch/report/ar6/wg2/downloads/outreach/IPCC_AR6_WGII_FactSheet_FoodAndWater.pdf">(IPCC)</a>.
+
+                    Rising global temperatures increase the moisture the atmosphere can hold, resulting in more storms
+                    and heavy rains, but paradoxically also more intense dry spells as more water evaporates from the
+                    land and global weather patterns change. <a
+                        href="https://www.worldbank.org/en/topic/waterresourcesmanagement"></a>World bank</P>
+                <p>Since 2000, flood-related disasters have risen by 134 per cent compared with the two previous
+                    decades. Most of the flood-related deaths and economic losses were recorded in Asia <a
+                        href="https://wmo.int/news/media-centre/wake-looming-water-crisis-report-warns">(WMO)</a>. The
+                    number and duration of droughts also increased by 29 per cent over this same period. Most
+                    drought-related deaths occurred in Africa <a href="">(WMO)</a>.</p>
             </div>
-        </div>
-            <div class="fact-slides fade">
-                <div class="fact-number"> 3/ 10</div>
-            <div class="fact">
-                <h3><u>Fact</u></h3>
-                <p>On average, an American household uses 300 gallons of water per day, with 70% of that used indoors.</p>
-            </div>
-        </div>
-            <div class="fact-slides fade">
-                <div class="fact-number">4 / 10</div>
-            <div class="fact">
-                <h3><u>Fact</u></h3>
-                <p>Water-efficient fixtures and appliances can reduce household water usage by up to 30%.</p>
-            </div>
-        </div>
-            <div class="fact-slides fade">
-                <div class="fact-number"> 5/ 10</div>
-            <div class="fact">
-                <h3><u>Fact</u></h3>
-                <p>Water scarcity affects over 40% of the global population, and this percentage is expected to increase.</p>
-            </div></div>
-            <div class="fact-slides fade">
-                <div class="fact-number">6 / 10</div>
-            <div class="fact">
-                <h3><u>Fact</u></h3>
-                <p>Producing a single sheet of paper requires about 3 gallons of water. which is unimaginable!!</p>
-            </div></div>
-            <div class="fact-slides fade">
-                <div class="fact-number">7 / 10</div>
-            <div class="fact">
-                <h3><u>Fact</u></h3>
-                <p>About 70% of the world's freshwater is used for agriculture.Improving irrigation efficiency can save a significant amount of water</p>
-            </div></div>
-            <div class="fact-slides fade">
-                <div class="fact-number">8 / 10</div>
-            <div class="fact">
-                <h3><u>Fact</u></h3>
-                <p>Recycling a ton of paper can save up to 7,000 gallons of water. Reducing paper waste helps conserve water.</p>
-            </div></div>
-            <div class="fact-slides fade">
-                <div class="fact-number">9/ 10</div>
-            <div class="fact">
-                <h3><u>Fact</u></h3>
-                <p>A 5-minute shower uses about 10-25 gallons of water, while a full bath can use up to 70 gallons.</p>
-            </div></div>
-            <div class="fact-slides fade">
-                <div class="fact-number">10 / 10</div>
-            <div class="fact">
-                <h3><u>Fact </u></h3>
-                <p>The human brain is composed of about 75% water, and water is essential for maintaining cognitive functions.</p>
-            </div></div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>   
-    </section>
-    <section>
-        <div class="ticker-container">
-            <div class="ticker">
-                <p id="ticker-message">let's celebrate World water conservation day this 22nd march.</p>
-            </div>
-        </div>
-    </section>
-    
-<section class="hero">
-    <h1>Save Water, Save Life</h1>
-    <p>Learn how to conserve water and make a difference</p>
-    <button class="water"><b><a href="tips.html">Get started</a></b></button>
-</section>
-    <footer>
-        <div class="footer-content">
-            <div class="quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tips.html">Tips & Guides</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact us.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="social-media">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="https://Facebook.com">Facebook</a></li>
-                    <li><a href="https://Twitter.com">Twitter</a></li>
-                    <li><a href="https://instagram.com">Instagram</a></li>
-                </ul>
-            </div>
-            <div class="contact-info">
-                <h3>Contact Info</h3>
-                <a href="mailto:info@waterconservationtips.com">Email: info@waterconservationtips.com</a>
-                <p><a href="tel:123-456-7890">Phone: 123-456-7890</a></p>
-            </div>
-        </div>
-            <p>&copy; 2024 Watur . All rights reserved.</p>
-    </footer>
-    <script src="scripts.js"></script>
+        </section>
+        <div class="infographic">
+            <section class="impact-stats">
+                <h2><u>Fascinating Facts About Water</u> </h2>
+            </section>
+            <section class="facts-list">
+                <div class="fact-slides fade">
+                    <div class="fact-number">1 / 10</div>
+                    <div class="fact">
+                        <h3><u>Fact</u></h3>
+                        <p>Less than 1% of the water supply on Earth can be used as drinking water. The rest is salt
+                            water (97%) or inaccessible (2%).</p>
+                    </div>
+                </div>
+                <div class="fact-slides fade">
+                    <div class="fact-number"> 2/ 10</div>
+                    <div class="fact">
+                        <h3><u>Fact</u></h3>
+                        <p>A single dripping faucet can waste over 3,000 gallons of water a year. That's enough water to
+                            take over 180 showers!</p>
+                    </div>
+                </div>
+                <div class="fact-slides fade">
+                    <div class="fact-number"> 3/ 10</div>
+                    <div class="fact">
+                        <h3><u>Fact</u></h3>
+                        <p>On average, an American household uses 300 gallons of water per day, with 70% of that used
+                            indoors.</p>
+                    </div>
+                </div>
+                <div class="fact-slides fade">
+                    <div class="fact-number">4 / 10</div>
+                    <div class="fact">
+                        <h3><u>Fact</u></h3>
+                        <p>Water-efficient fixtures and appliances can reduce household water usage by up to 30%.</p>
+                    </div>
+                </div>
+                <div class="fact-slides fade">
+                    <div class="fact-number"> 5/ 10</div>
+                    <div class="fact">
+                        <h3><u>Fact</u></h3>
+                        <p>Water scarcity affects over 40% of the global population, and this percentage is expected to
+                            increase.</p>
+                    </div>
+                </div>
+                <div class="fact-slides fade">
+                    <div class="fact-number">6 / 10</div>
+                    <div class="fact">
+                        <h3><u>Fact</u></h3>
+                        <p>Producing a single sheet of paper requires about 3 gallons of water. which is unimaginable!!
+                        </p>
+                    </div>
+                </div>
+                <div class="fact-slides fade">
+                    <div class="fact-number">7 / 10</div>
+                    <div class="fact">
+                        <h3><u>Fact</u></h3>
+                        <p>About 70% of the world's freshwater is used for agriculture.Improving irrigation efficiency
+                            can save a significant amount of water</p>
+                    </div>
+                </div>
+                <div class="fact-slides fade">
+                    <div class="fact-number">8 / 10</div>
+                    <div class="fact">
+                        <h3><u>Fact</u></h3>
+                        <p>Recycling a ton of paper can save up to 7,000 gallons of water. Reducing paper waste helps
+                            conserve water.</p>
+                    </div>
+                </div>
+                <div class="fact-slides fade">
+                    <div class="fact-number">9/ 10</div>
+                    <div class="fact">
+                        <h3><u>Fact</u></h3>
+                        <p>A 5-minute shower uses about 10-25 gallons of water, while a full bath can use up to 70
+                            gallons.</p>
+                    </div>
+                </div>
+                <div class="fact-slides fade">
+                    <div class="fact-number">10 / 10</div>
+                    <div class="fact">
+                        <h3><u>Fact </u></h3>
+                        <p>The human brain is composed of about 75% water, and water is essential for maintaining
+                            cognitive functions.</p>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+            <section>
+                <div class="ticker-container">
+                    <div class="ticker">
+                        <p id="ticker-message">let's celebrate World water conservation day this 22nd march.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero">
+                <h1>Save Water, Save Life</h1>
+                <p>Learn how to conserve water and make a difference</p>
+                <button class="water"><b><a href="tips.html">Get started</a></b></button>
+            </section>
+            <footer>
+                <div class="footer-content">
+                    <div class="quick-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="tips.html">Tips & Guides</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact us.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-media">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="https://Facebook.com">Facebook</a></li>
+                            <li><a href="https://Twitter.com">Twitter</a></li>
+                            <li><a href="https://instagram.com">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Contact Info</h3>
+                        <a href="mailto:info@waterconservationtips.com">Email: info@waterconservationtips.com</a>
+                        <p><a href="tel:123-456-7890">Phone: 123-456-7890</a></p>
+                    </div>
+                </div>
+                <p>&copy; 2024 Watur . All rights reserved.</p>
+            </footer>
+            <script src="scripts.js"></script>
 
 </body>
+
 </html>

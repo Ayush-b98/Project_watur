@@ -4,79 +4,12 @@ body {
     padding: 0;
 }
 
-header, footer {
+footer {
     background-color: #143e51fb;
     color: white;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-    position: relative;
-}
 
-nav {
-    display: flex;
-    align-items: center;
-}
-
-nav .menu-icon {
-    display: none; /* Hide the icon on larger screens */
-    flex-direction: column;
-    cursor: pointer;
-}
-
-nav .menu-icon div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    position: relative;
-    margin-right: 1em;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    position: relative;
-    z-index: 1;
-    padding: 0.5em 1em;
-}
-
-nav ul li::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-    border-radius: 4px;
-    z-index: 0;
-}
-
-nav ul li:hover::before {
-    background-color: #e0f7fa;
-}
-
-nav ul li a:hover {
-    color: #143e51fb;
-    text-decoration: none;
-}
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -223,12 +156,15 @@ nav ul li a:hover {
   }
   
   .slide {
+        height: 70%;
+
     min-width: 100%;
     box-sizing: border-box;
   }
   
   .slide img {
-    width: 100%;
+    width: 70%;
+    height: 100%;
     border-radius: 10px;
   }
 .button{
@@ -382,7 +318,9 @@ fact-slides {
 .infographics
 {
     text-align: center;
-    text-decoration: underline 3px;
+    font-size: 40px;
+    color: #106999;
+    /* text-decoration: underline 3px; */
 
 }
 
